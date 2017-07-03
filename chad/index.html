@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>A Responsive Email Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}
+    table{border-collapse: collapse !important;}
+    body{height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 525px) {
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /* ADJUSTS LAYOUT OF LOGO IMAGE */
+        .logo img {
+          margin: 0 auto !important;
+        }
+
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        .mobile-hide {
+          display: none !important;
+        }
+
+        .img-max {
+          max-width: 100% !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        /* FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .padding {
+          padding: 10px 5% 15px 5% !important;
+        }
+
+        .padding-meta {
+          padding: 30px 5% 0px 5% !important;
+          text-align: center;
+        }
+
+        .padding-copy {
+            padding: 10px 5% 10px 5% !important;
+          text-align: center;
+        }
+
+        .no-padding {
+          padding: 0 !important;
+        }
+
+        .section-padding {
+          padding: 0px 15px 20px 15px !important;
+        }
+
+        /* ADJUST BUTTONS ON MOBILE */
+        .mobile-button-container {
+            margin: 0 auto;
+            width: 100% !important;
+        }
+
+        .mobile-button {
+            padding: 15px !important;
+            border: 0 !important;
+            font-size: 16px !important;
+            display: block !important;
+        }
+    }
+
+    /* ANDROID CENTER FIX */
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+</style>
+<!--[if gte mso 12]>
+<style type="text/css">
+.mso-right {
+    padding-left: 20px;
+}
+</style>
+<![endif]-->
+</head>
+<body style="margin: 0 !important; padding: 0 !important;">
+
+<!-- HIDDEN PREHEADER TEXT -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+    you can write here the title of your mail....
+</div>
+
+<!-- HEADER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 30px 15px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-bottom: 20px; max-width: 630px;" class="responsive-table">
+                <!-- TITLE -->
+                <tbody>
+                <tr>
+                    <td align="center" height="100%" valign="top" width="100%" colspan="2">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+                        <tr>
+                        <td align="center" valign="top" width="500">
+                        <![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630;">
+                            <tbody><tr>
+                                <td align="center" valign="top" style="font-size:0;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+                                    <tr>
+                                    <td align="left" valign="top" width="115">
+                                    <![endif]-->
+                                    <div style="display:inline-block; margin: 0 -2px; max-width:180px; vertical-align:top; width:100%;">
+
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="180">
+                                            <tbody><tr>
+                                                <td valign="top" style="padding: 10px 0 0 0;"><a href="https://www.thinkscience.co.jp/en/" target="_blank"><img src="logo.jpg" alt="alt text here" width="120" height="102" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 180px; height: 102px;"></a></td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    <td align="left" valign="top" width="385">
+                                    <![endif]-->
+                                    <div style="display:inline-block; margin: 0 -2px; max-width:450px; vertical-align:top; width:100%;">
+
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody><tr>
+
+                                                <td style="padding: 0px 0 0 0;" class="no-padding">
+                                                    <!-- ARTICLE -->
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td align="left" style="padding: 65px 0 5px 15px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #2973a3;" class="padding">Maximizing your success in publication</td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </tbody></table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 20px 65px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 630px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">[Institution name] [Department name]</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">[Group name]</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">XX YY 様</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 20px 65px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 630px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">お世話になっております。</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">ThinkSCIENCEの杉田と申します。</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 20px 65px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 630px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">この度はお見積り依頼をいただきありがとうございます。</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">お見積もりの詳細やご発注方法については、下記に記載していますのでご確認ください。</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy"><span style="color: #2973a3;">You can also view, download, and print your quotation here: </span>URL xxxxxxxxx</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 20px 15px 20px 15px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 750px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="center" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">お見積り</td>
+                                        </tr>
+                                        <tr><td>
+                                            <table style="width: 100%; border: 3px solid #91bc57;">
+                                                <tr style="border-bottom: 1px solid gray;">
+                                                    <td style="padding:0 25px 50px 5px; font-weight: bold;">
+                                                    納品予定日
+                                                    </td>
+                                                    <td>
+                                                    <p>
+                                                    独自性チェック：<span style="font-weight: bold;">平成29年6月3日</span> 平成29年6月3日（ご発注より <span style="color: #91bc57; font-weight: bold;">4営業日</span>）
+                                                    <br>
+                                                    校正他：独自性チェック結果ご確認後より<span style="color: #91bc57; font-weight: bold;">4営業日</span> 
+                                                    <br>
+                                                    オンライン投稿：最終原稿ご確認後より<span style="color: #91bc57; font-weight: bold;">1~2営業日</span>    
+                                                    </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: 1px solid gray;">
+                                                    <td style="padding:0 25px 50px 5px; font-weight: bold;">
+                                                    包括的な校正サービス
+                                                    </td>
+                                                    <td>
+                                                    <p>
+                                                    独自性チェック：<span style="font-weight: bold;">平成29年6月3日</span>（ご発注より <span style="color: #91bc57; font-weight: bold;">4営業日</span>）
+                                                    <br>
+                                                    校正他：独自性チェック結果ご確認後より<span style="color: #91bc57; font-weight: bold;">4営業日</span> 
+                                                    <br>
+                                                    オンライン投稿：最終原稿ご確認後より<span style="color: #91bc57; font-weight: bold;">1~2営業日</span>    
+                                                    </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: 1px solid gray;">
+                                                    <td style="padding:0 25px 50px 5px; font-weight: bold;">
+                                                    包括的な校正サービス
+                                                    </td>
+                                                    <td>
+                                                    <p>
+                                                    独自性チェック：<span style="font-weight: bold;">平成29年6月3日</span> ご発注より<span style="color: #91bc57; font-weight: bold;">4営業日</span>）
+                                                    <br>
+                                                    校正他：独自性チェック結果ご確認後より<span style="color: #91bc57; font-weight: bold;">4営業日</span> 
+                                                    <br>
+                                                    オンライン投稿：最終原稿ご確認後より<span style="color: #91bc57; font-weight: bold;">1~2営業日</span>    
+                                                    </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: 1px solid gray;">
+                                                    <td style="padding:0 25px 125px 5px; font-weight: bold;">
+                                                    内訳
+                                                    </td>
+                                                    <td>
+                                                    <p>
+                                                    包括的な校正（新規加筆箇所） 512単語 x 12.5円 = 6,400円
+                                                    <br>
+                                                    Figures: 参考のみ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tables: なし &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;References: for reference only 
+                                                    <br>
+                                                    プルーフチェック&nbsp;（新規箇所以外） &nbsp;&nbsp;3,755単語 x 2.5円 = 9,387円
+                                                    <br>
+                                                    校正証明書 =  無料 (ThinkSCIENCE Members’ Program Reward) <br>
+                                                    小計　15,787円（消費税 1,262円） <br>
+                                                    合計　17,049円
+                                                    </p>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: 1px solid gray;">
+                                                    <td style="padding:0 25px 0px 5px; font-weight: bold;">
+                                                    合計金額（税込み）
+                                                    </td>
+                                                    <td>
+                                                    <p>
+                                                    <span style="font-weight: bold;">149,276円</span>
+                                                    </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 20px 65px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 630px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">
+                                            <p>正式発注の際には、お見積り内容をご確認いただき、、本メールをご返信ください:<br>1. 追加オプションサービスをご希望の場合にはサービス名を記入<br>2. ご請求情報をご確認の上、変更がございましたらご記入の上</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 20px 65px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 630px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; color: red; padding: 0px 0px 15px 0px; font-weight: bold;" class="padding-copy">1. 追加オプションサービス（ご希望の場合には、サービス名のご記入ください。）</td>
+                                        </tr>
+                                        <tr><td>
+                                            <table>
+                                                <tr>
+                                                    <td align="center" style="border: 1px solid; padding: 5px;"><img src="1.jpg" width="35" height="35"><br>投稿規定 6,000円～7,500円</td>
+                                                    <td align="center" style="border: 1px solid; padding: 5px;"><img src="1.jpg" width="35" height="35"><br>オンライン投稿 10,000円/1時間</td>
+                                                    <td align="center" style="border: 1px solid; padding: 5px;"><img src="1.jpg" width="35" height="35"><br>校正・翻訳証明書 1,000円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" style="border: 1px solid; padding: 5px;"><img src="1.jpg" width="35" height="35"><br>オーディオ録音 2,500円/200単語</td>
+                                                    <td align="center" style="border: 1px solid; padding: 5px;"><img src="1.jpg" width="35" height="35"><br>独自性チェック 15,000円</td>
+                                                    <td align="center" style="border: 1px solid; padding: 5px;"><br>テープ起こし ｘｘｘｘｘｘｘｘ</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; color: red; padding: 30px 0px 15px 0px; font-weight: bold;" class="padding-copy">２．ご請求情報（ご請求情報を確認の上、変更がございましたら、ご記入ください。）</td>
+                                        </tr>
+                                        <tr><td>
+                                            <table width="100%" style="border: 3px solid gray; width: 100%;">
+                                                <tr><td>
+                                                    <p style="line-height: 30px;"><u>ご請求情報１</u><br>ご請求書の宛名： 国立研究開発法人　産業技術総合研究所 <br>送付先ご住所： 〒305-8566 茨城県つくば市東1-1-1　中央第6 <br>送付先の大学・会社名： 産業技術総合研究所 <br>送付先の部署名等: 人間情報研究部門 <br>送付先のご担当者名： 渡邊（小島） 洋（比呂子） 様 <br>ご請求に関するご連絡先（お電話番号）： 0727-51-8142 <br>ご請求区分： 公費 <br><u>ご請求情報2</u><br>ご請求書の宛名： 国立研究開発法人　産業技術総合研究所 <br>送付先ご住所： 〒305-8566 茨城県つくば市東1-1-1　中央第6 <br>送付先の大学・会社名： 産業技術総合研究所 <br>送付先の部署名等: 人間情報研究部門 <br>送付先のご担当者名： 渡邊（小島） 洋（比呂子） 様 <br>ご請求に関するご連絡先（お電話番号）： 0727-51-8142 <br>ご請求区分： 私費</p>
+                                                </td></tr>
+                                            </table>
+                                        </td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 20px 65px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 630px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">
+                                            <p>お申込みいただいた時点で、弊社ウェブサイト <a href="https://www.thinkscience.co.jp/terms-and-conditions#services" target="_blank" style="color: #2973a3;">https://www.thinkscience.co.jp/terms-and-conditions#services</a>に掲載しているサービス契約条件に同意したものとみなします。正式発注後にご注文を取消される際には、キャンセル料が発生する場合がございます。また、お見積りからご注文までに遅れが生じますと、納品日が変更になる場合がございますので、併せてご注意ください。 <br>お客様からの発注メールを受信後、弊社よりご発注受付及び納期のお知らせをメールでご返信し、正式発注となります。 <br>ご不明な点がございましたら、遠慮なくお問合せ下さい。 <br>ご検討の程、宜しくお願い申し上げます。</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 20px 65px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 630px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">
+                                            ThinkSCIENCE株式会社 <br>カスタマーサービスマネージャー <br>杉田　悟美 <br>Tel: 03-5541-4400 <br>Fax: 03-5541-4401 <br> <a href="https://thinkscience.co.jp/en/" target="_blank" style="color: #2973a3;">www.thinkscience.co.jp</a><br><br><img src="4.jpg" class="img-max">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px 15px 20px 65px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 630px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- HERO IMAGE -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <!-- COPY -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" style="font-size: 15px; font-family: Helvetica, Arial, sans-serif; padding-top: 15px;" class="padding-copy">本メールおよび添付されているファイルは機密情報を含んでいる可能性があります。 <br><p>あなたが意図された受取人で無い場合、本メールに含まれる情報を開示、使用も禁止されております。誤って本メールを受け取ってしまった場合は、直ちに通知していただき、本メールと全てのコピーをすみやかに削除して下さい。</p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</table>
+</body>
+</html>
